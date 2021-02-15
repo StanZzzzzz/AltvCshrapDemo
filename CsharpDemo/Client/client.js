@@ -7,7 +7,7 @@ let loaded = false;
 let opened = false;
 let hidden = false;
 
-let view = new alt.WebView("http://resources/FreeApe/Client/html/index.html");
+let view = new alt.WebView("http://resources/CsharpDemo/Client/html/index.html");
 
 function addMessage(name, text) {
   if (name) {
