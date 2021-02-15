@@ -84,8 +84,8 @@ namespace CsharpDemo.Utils
                 Command command = GetCommand(commandCode);
                 if (HasCommandArgs(commandCode, commandParams))
                 {
-                    Type type = Type.GetType("FreeApe.Commands.PublicCommands");
-                    Object obj = type.Assembly.CreateInstance("FreeApe.Commands.PublicCommands");
+                    Type type = Type.GetType("CsharpDemo.Commands.PublicCommands");
+                    Object obj = type.Assembly.CreateInstance("CsharpDemo.Commands.PublicCommands");
                     String commandName = commandCode.Substring(1, commandCode.Length - 1);
                     MethodInfo method = type.GetMethod(commandName);
                     if (method != null)
